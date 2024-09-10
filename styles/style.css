@@ -1,0 +1,46 @@
+div div {
+    background-color: blue;
+}
+
+div div:nth-child(odd) { /* :nth-child(odd) selects all div elements inside a div whos order is odd. ex: 1, 3, 5, 7, etc */
+    background-color: orange;
+}
+
+#flexBox1 {
+    display: flex;
+    justify-content: space-evenly; /* space-evenly spaces all the content evenly of the page */
+    align-items: center; /* This centers the items horizontally */
+    flex-direction: row; /* This makes the items flex in a row/horizontally */
+}
+
+#flexBox1 div:last-child { /* :last-child selects the last child that is a div inside #flexBox1 */
+    background-color: brown;
+}
+
+#flexBox1 div {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#flexBox2 {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: center; /* This centers the items vertically */
+    align-items: center; /* This centers the items horizontally */
+}
+
+#flexBox2 div {
+    height: 200px;
+    width: 200px;
+    transition: 200ms;
+}
+
+#flexBox2 div:first-child { /* :first-child selects the first child that is a div inside #flexBox1 */
+    background-color: blueviolet;
+}
+
+#flexBox2 div:hover { /* :hover changes the div when the mouse hovers over it */
+    background-color: blue;
+}
